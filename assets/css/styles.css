@@ -1,0 +1,82 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: auto;
+  grid-auto-rows: auto;
+  width: 60%;
+  margin: 50px auto;
+  padding-top: 30px;
+  padding-bottom: 50px;
+  color: white;
+  background: navy;
+}
+
+.game-title, .timer-title, .question {
+  text-align: center;
+  font-weight: 400;
+}
+
+.game-content {
+  display: none;
+  grid-template-columns: auto;
+  grid-auto-rows: auto;
+}
+
+.answers {
+  justify-self: center;
+}
+
+.answers h4, .answers p, .end p {
+  margin: 5px auto;
+  text-align: center;
+  padding: 10px;
+  font-weight: 500;
+  border: 0.5px solid transparent;
+}
+
+.answers h4:hover {
+  cursor: pointer;
+  border: 0.5px solid white;
+}
+
+button {
+  background: transparent;
+  padding: 10px;
+  outline: none;
+  width: 100px;
+  border: 0.5px solid white;
+  color: white;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.game-start {
+  margin-top: 50px;
+  justify-self: center;
+}
+
+.end {
+  margin-top: 20px;
+  justify-self: center;
+}
+.restart {
+  display: none;
+  justify-self: center;
+  margin-top: 20px;
+}
+
+@media screen and (max-width: 500px) {
+  .container{
+    width: 90%;
+  }
+}
